@@ -1,9 +1,7 @@
 from stringToIntList import *
 
 if __name__ == "__main__":
-    inputFilePath = "2025_Problem_C_Data\summerOly_programs.csv"
-    outputFilePath = "sportCode.csv"
-    data = stringToInt(inputFilePath, 2)
+    inputFilePath = "sportCode2.csv"
+    outputFilePath = "sport.csv"
+    data = stringToInt(inputFilePath, 1)
     printToFile(outputFilePath, data, printToScreen=True)
-        
-        
