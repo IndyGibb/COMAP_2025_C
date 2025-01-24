@@ -1,5 +1,3 @@
-# import NumPy as np
-from collections import defaultdict
 from stringToIntList import *
 
 if __name__ == "__main__":
