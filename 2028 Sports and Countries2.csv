@@ -1,0 +1,58 @@
+Sport,SportNum,Code,CodeNum,Sex,,
+Aquatics,0,SWA,0,1,,Artistic Swimming
+Aquatics,0,DIV,1,1,,Diving
+Aquatics,0,OWS,2,1,,Marathon Swimming
+Aquatics,0,SWM,3,1,,Swimming
+Aquatics,0,WPO,4,1,,Water Polo
+Archery,1,ARC,5,1,,Archery
+Athletics,2,ATH,6,1,,Athletics
+Badminton,3,BDM,7,1,,Badminton
+Baseball�and Softball,4,BSB,8,0,,Baseball
+Basketball,5,BK3,10,1,,3x3
+Basketball,5,BKB,11,1,,Basketball
+Canoeing,9,CSP,15,1,,Sprint
+Canoeing,9,CSL,16,1,,Slalom
+Cricket,10,CKT,17,1,,Cricket
+Croquet,11,CQT,18,1,,Croquet
+Cycling,12,BMF,19,1,,BMX Freestyle
+Cycling,12,BMX,20,1,,BMX Racing
+Cycling,12,MTB,21,1,,Mountain Bike
+Cycling,12,CRD,22,1,,Road
+Cycling,12,CTR,23,1,,Track
+Equestrian,13,EDR,24,0,,Dressage
+Equestrian,13,EVE,25,0,,Eventing
+Equestrian,13,EJP,26,0,,Jumping
+Equestrian,13,EVL,27,0,,Vaulting
+Equestrian,13,EDV,28,0,,Driving
+Fencing,14,FEN,29,1,,Fencing
+Field hockey,15,HOC,30,1,,Field hockey
+Flag football,16,AFB,31,1,,Flag football
+Football,17,FBL,32,1,,Football
+Golf,18,GLF,33,1,,Golf
+Gymnastics,19,GAR,34,0,,Artistic
+Gymnastics,19,GRY,35,0,,Rhythmic
+Gymnastics,19,GTR,36,1,,Trampoline
+Handball,20,HBL,37,1,,Indoor
+Handball,20,HBL,37,1,,Field
+Judo,22,JUD,39,1,,Judo
+Lacrosse,24,LAX,41,1,,Sixes
+Modern Pentathlon,25,MPN,42,1,,
+Rowing,29,ROC,46,1,,Coastal
+Rowing,29,ROW,47,1,,Rowing
+Rugby,30,RU7,48,1,,Sevens
+Rugby,30,RUG,49,1,,Union
+Sailing,31,SAL,50,1,,Sailing
+Shooting,32,SHO,51,1,,Shooting
+Skateboarding,33,SKB,52,1,,Skateboarding
+Sport Climbing,34,CLB,53,1,,Sport Climbing
+Squash,35,SQU,54,1,,Squash
+Surfing,36,SRF,55,1,,Surfing
+Table Tennis,37,TTE,56,1,,Table Tennis
+Taekwondo,38,TKW,57,1,,Taekwondo
+Tennis,39,TEN,58,1,,Tennis
+Triathlon,40,TRI,59,1,,Triathlon
+Volleyball,42,VBV,61,1,,Beach
+Volleyball,42,VVO,62,1,,Indoor
+Weightlifting,44,WLF,64,1,,Weightlifting
+Wrestling,45,WRF,65,1,,Freestyle
+Wrestling,45,WRG,66,1,,Greco-Roman

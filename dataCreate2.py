@@ -119,42 +119,30 @@ with open('2025_Problem_C_Data\\summerOly_athletes.csv', 'r') as f:
         goldInSport = 0;
         for codeIter in range(0, 69):
             for sexIter in range(0, 2):
-                for yearIter in range(0, year):
-                    goldInSport += goldMedals[country, sport, codeIter, sexIter, yearIter];
+                goldInSport += goldMedals[country, sport, codeIter, sexIter, year];
         goldInSportCode = 0;
         for sexIter in range(0, 2):
-            for yearIter in range(0, year):
-                goldInSportCode += goldMedals[country, sport, sportCode, sexIter, yearIter];
+            goldInSportCode += goldMedals[country, sport, sportCode, sexIter, year];
         goldInSportCodeSex = 0;
-        for yearIter in range(0, year):
-            goldInSportCodeSex += goldMedals[country, sport, sportCode, sex, yearIter];
-        
+        goldInSportCodeSex += goldMedals[country, sport, sportCode, sex, year];
         silverInSport = 0;
         for codeIter in range(0, 69):
             for sexIter in range(0, 2):
-                for yearIter in range(0, year):
-                    silverInSport += silverMedals[country, sport, codeIter, sexIter, yearIter];
+                silverInSport += silverMedals[country, sport, codeIter, sexIter, year];
         silverInSportCode = 0;
         for sexIter in range(0, 2):
-            for yearIter in range(0, year):
-                silverInSportCode += silverMedals[country, sport, sportCode, sexIter, yearIter];
+            silverInSportCode += silverMedals[country, sport, sportCode, sexIter, year];
         silverInSportCodeSex = 0;
-        for yearIter in range(0, year):
-            silverInSportCodeSex += silverMedals[country, sport, sportCode, sex, yearIter];
-        
+        silverInSportCodeSex += silverMedals[country, sport, sportCode, sex, year];
         bronzeInSport = 0;
         for codeIter in range(0, 69):
             for sexIter in range(0, 2):
-                for yearIter in range(0, year):
-                    bronzeInSport += bronzeMedals[country, sport, codeIter, sexIter, yearIter];
+                bronzeInSport += bronzeMedals[country, sport, codeIter, sexIter, year];
         bronzeInSportCode = 0;
         for sexIter in range(0, 2):
-            for yearIter in range(0, year):
-                bronzeInSportCode += bronzeMedals[country, sport, sportCode, sexIter, yearIter];
+            bronzeInSportCode += bronzeMedals[country, sport, sportCode, sexIter, year];
         bronzeInSportCodeSex = 0;
-        for yearIter in range(0, year):
-            bronzeInSportCodeSex += bronzeMedals[country, sport, sportCode, sex, yearIter];
-        
+        bronzeInSportCodeSex += bronzeMedals[country, sport, sportCode, sex, year];
         athletesBaseThisYear = athletesBase[country, year];
         athletesCodeThisYear = athletesCode[country, year, sportCode];
         athletesSexThisYear = athletesSex[country, year, sex];
@@ -165,15 +153,17 @@ with open('2025_Problem_C_Data\\summerOly_athletes.csv', 'r') as f:
             athletesCodeLastYear = athletesCode[country, year - 1, sportCode];
             athletesSexLastYear = athletesSex[country, year - 1, sex];
             athletesBothLastYear = athletesBoth[country, year - 1, sportCode, sex];
+            goldThisYear = goldMedals[country, sport, sportCode, sex, year] - goldMedals[country, sport, sportCode, sex, year - 1];
+            silverThisYear = silverMedals[country, sport, sportCode, sex, year] - silverMedals[country, sport, sportCode, sex, year - 1];
+            bronzeThisYear = bronzeMedals[country, sport, sportCode, sex, year] - bronzeMedals[country, sport, sportCode, sex, year - 1];   
         else:
             athletesLastYear = 0;
             athletesCodeLastYear = 0;
             athletesSexLastYear = 0;
             athletesBothLastYear = 0;
-        
-        goldThisYear = goldMedals[country, sport, sportCode, sex, year];
-        silverThisYear = silverMedals[country, sport, sportCode, sex, year];
-        bronzeThisYear = bronzeMedals[country, sport, sportCode, sex, year];
+            goldThisYear = goldMedals[country, sport, sportCode, sex, 0];
+            silverThisYear = silverMedals[country, sport, sportCode, sex, 0];
+            bronzeThisYear = bronzeMedals[country, sport, sportCode, sex, 0];
 
         newLine += str(goldInSport) + "," + str(silverInSport) + "," + str(bronzeInSport) + "," + str(goldInSportCode) + "," + str(silverInSportCode) + "," + str(bronzeInSportCode) + "," + str(goldInSportCodeSex) + "," + str(silverInSportCodeSex) + "," + str(bronzeInSportCodeSex) + "," + str(athletesBaseThisYear) + "," + str(athletesCodeThisYear) + "," + str(athletesSexThisYear) + "," + str(athletesBothThisYear) + "," + str(athletesLastYear) + "," + str(athletesCodeLastYear) + "," + str(athletesSexLastYear) + "," + str(athletesBothLastYear) + "," + str(goldThisYear) + "," + str(silverThisYear) + "," + str(bronzeThisYear);
         lines.append(str(lineNum) + "," + newLine);

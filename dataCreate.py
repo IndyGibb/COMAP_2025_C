@@ -1,13 +1,21 @@
 from collections import defaultdict
 import string
 
-def dictGet(filePath: string, keyLocation: int = 1, valueLocation: int = 0, fileDelim: string = ','):
+def dictGet(filePath: string, keyLocation: int = 1, valueLocation: int = 0, fileDelim: string = ',', valueType: string = 'int'):
     dictionary = defaultdict(int);
     with open(filePath, 'r') as f:
         for line in f:
             data = line.split(fileDelim);
             data = [v.strip() for v in data];
-            dictionary[data[keyLocation]] = int(data[valueLocation]);
+            if valueType == 'int':
+                dictionary[data[keyLocation]] = int(data[valueLocation]);
+            elif valueType == 'float':
+                dictionary[data[keyLocation]] = float(data[valueLocation]);
+            elif valueType == 'str':
+                dictionary[data[keyLocation]] = str(data[valueLocation]);
+            else:
+                dictionary[data[keyLocation]] = data[valueLocation];
+
         f.close();
     return dictionary;
 

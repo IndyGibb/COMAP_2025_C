@@ -1,0 +1,58 @@
+Sport,Sport Num,Code,Code Num,Sex,,
+Aquatics,,SWA,,1,,Artistic Swimming
+Aquatics,,DIV,,1,,Diving
+Aquatics,,OWS,,1,,Marathon Swimming
+Aquatics,,SWM,,1,,Swimming
+Aquatics,,WPO,,1,,Water Polo
+Archery,,ARC,,1,,Archery
+Athletics,,ATH,,1,,Athletics
+Badminton,,BDM,,1,,Badminton
+Baseball and Softball,,BSB,,0,,Baseball
+Basketball,,BK3,,1,,3x3
+Basketball,,BKB,,1,,Basketball
+Canoeing,,CSP,,1,,Sprint
+Canoeing,,CSL,,1,,Slalom
+Cricket,,CKT,,1,,Cricket
+Croquet,,CQT,,1,,Croquet
+Cycling,,BMF,,1,,BMX Freestyle
+Cycling,,BMX,,1,,BMX Racing
+Cycling,,MTB,,1,,Mountain Bike
+Cycling,,CRD,,1,,Road
+Cycling,,CTR,,1,,Track
+Equestrian,,EDR,,0,,Dressage
+Equestrian,,EVE,,0,,Eventing
+Equestrian,,EJP,,0,,Jumping
+Equestrian,,EVL,,0,,Vaulting
+Equestrian,,EDV,,0,,Driving
+Fencing,,FEN,,1,,Fencing
+Field hockey,,HOC,,1,,Field hockey
+Flag football,,AFB,,1,,Flag football
+Football,,FBL,,1,,Football
+Golf,,GLF,,1,,Golf
+Gymnastics,,GAR,,0,,Artistic
+Gymnastics,,GRY,,0,,Rhythmic
+Gymnastics,,GTR,,1,,Trampoline
+Handball,,HBL,,1,,Indoor
+Handball,,HBL,,1,,Field
+Judo,,JUD,,1,,Judo
+Lacrosse,,LAX,,1,,Sixes
+Modern Pentathlon,,MPN,,1,,
+Rowing,,ROC,,1,,Coastal
+Rowing,,ROW,,1,,Rowing
+Rugby,,RU7,,1,,Sevens
+Rugby,,RUG,,1,,Union
+Sailing,,SAL,,1,,Sailing
+Shooting,,SHO,,1,,Shooting
+Skateboarding,,SKB,,1,,Skateboarding
+Sport Climbing,,CLB,,1,,Sport Climbing
+Squash,,SQU,,1,,Squash
+Surfing,,SRF,,1,,Surfing
+Table Tennis,,TTE,,1,,Table Tennis
+Taekwondo,,TKW,,1,,Taekwondo
+Tennis,,TEN,,1,,Tennis
+Triathlon,,TRI,,1,,Triathlon
+Volleyball,,VBV,,1,,Beach
+Volleyball,,VVO,,1,,Indoor
+Weightlifting,,WLF,,1,,Weightlifting
+Wrestling,,WRF,,1,,Freestyle
+Wrestling,,WRG,,1,,Greco-Roman
