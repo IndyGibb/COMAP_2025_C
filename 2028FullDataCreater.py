@@ -48,7 +48,7 @@ athletesBoth[:] = 0;
 countryCodes = dictGet("countryCode.csv");
 years = dictGet("yearsChanger.csv");
 
-countryCodesList = listGet("countryCode.csv", 0);
+countryCodesList = listGet("countryCode.csv", 0, header = False);
 sportsList = listGet("2028 Sports and Countries2.csv", 1)
 sportCodesList = dictListGet("2028 Sports and Countries2.csv", 1, 3)
 
@@ -115,7 +115,7 @@ with open('2025_Problem_C_Data\\summerOly_athletes.csv', 'r') as f:
     # country code, year, sex, sport, sport code, gold in sport, silver in sport, bronze in sport, gold in sport + sport code, silver in sport + sport code, bronze in sport + sport code, gold in sport + code + sex, silver in sport + code + sex, bronze in sport + code + sex, athletes this year, athletes in code this year, athletes in sex this year, athletes in code + sex this year, athletes last year, athletes in code last year, athletes in sex last year, athletes in code + sex last year,
     with open('2028FullData.csv', 'w') as f:
         f.write("lineNum,countryCode,year,sex,sport,sportcode,goldInSport,silverInSport,bronzeInSport,goldInSportCode,silverInSportCode,bronzeInSportCode,goldInSportCodeSex,silverInSportCodeSex,bronzeInSportCodeSex,athletesBaseThisYear,athletesCodeThisYear,athletesSexThisYear,athletesBothThisYear,athletesLastYear,athletesCodeLastYear,athletesSexLastYear,athletesBothLastYear\n");
-        for country in range(0, len(countryCodesList)):
+        for country in countryCodesList:
                 with open(f"2028 Sports and Countries2.csv", "r") as g:
                     next(g);
                     for line in g:
@@ -165,5 +165,5 @@ with open('2025_Problem_C_Data\\summerOly_athletes.csv', 'r') as f:
                             goldMedalsCodeSexPrior = goldMedalsCodePrior;
                             silverMedalsCodeSexPrior = silverMedalsCodePrior;
                             bronzeMedalsCodePrior = bronzeMedalsCodePrior;
-                        print(f"{lineNum},{countryCodesList[country]},31,{sex},{int(sportData[1])},{int(sportData[3])},{goldMedalsPrior},{silverMedalsPrior},{bronzeMedalsPrior},{goldMedalsCodePrior},{silverMedalsCodePrior},{bronzeMedalsCodePrior},{goldMedalsCodeSexPrior},{silverMedalsCodeSexPrior},{bronzeMedalsCodePrior},{athletesBase[country, 31]},{athletesCode[country, 31, int(sportData[3])]},{athletesSex[country, 31, sex]},{athletesBoth[country, 31, int(sportData[3]), sex]},{athletesBase[country, 30]},{athletesCode[country, 30, int(sportData[3])]},{athletesSex[country, 30, sex]},{athletesBoth[country, 30, int(sportData[3]), sex]}", file=f);
+                        print(f"{lineNum},{countryCodesList[country]},31,{sex},{int(sportData[1])},{int(sportData[3])},{goldMedalsPrior},{silverMedalsPrior},{bronzeMedalsPrior},{goldMedalsCodePrior},{silverMedalsCodePrior},{bronzeMedalsCodePrior},{goldMedalsCodeSexPrior},{silverMedalsCodeSexPrior},{bronzeMedalsCodePrior},{athletesBase[country, 30]},{athletesCode[country, 30, int(sportData[3])]},{athletesSex[country, 30, sex]},{athletesBoth[country, 30, int(sportData[3]), sex]},{athletesBase[country, 30]},{athletesCode[country, 30, int(sportData[3])]},{athletesSex[country, 30, sex]},{athletesBoth[country, 30, int(sportData[3]), sex]}", file=f);
                         lineNum += 1;
